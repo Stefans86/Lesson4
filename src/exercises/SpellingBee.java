@@ -20,18 +20,16 @@ public class SpellingBee {
 	 * word, but if they do not spell it right ask again. The only place that you
 	 * need to write code in is the stuffForYouToDo() method.
 	 */
-	
+
 	void stuffForYouToDo() {
 		// Write your code here...
-		
-		
-		
+
 	}
 
 	public String getRandomWord() {
 		return words.get(new Random().nextInt(lines));
 	}
-	
+
 	public void speak(String words) {
 		SpeechSynthesizer speaker = new SpeechSynthesizer("speaker");
 		speaker.synthesize(words);
